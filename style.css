@@ -1,0 +1,1490 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* outline: none; */
+    box-sizing: border-box;
+
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+:root{
+    --primary-color: #ff5400;
+    --header-color: #131318 ;
+    --nav-menu-color:#424247;
+    --white: #fff;
+    --tour-paragraph-color: #131318b3;
+    --why_choose_para-color: #5a5a5d;
+    --footer-and-subscribe-input-bg:#1313180d;
+
+}
+/** same-layout  */
+.btn_same{
+    color: var(--white);
+    font-size: 1.92rem ;
+    background-color: var(--primary-color);
+    margin-top: 1rem;
+    padding: 1.3rem 3rem ;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    width: 15.2rem;
+}
+/** container  */
+.container{
+    width: 85%;
+    margin: 0 auto;
+
+}
+/** header  */
+/* header{
+    list-style: none;
+} */
+/** nav  */
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2.4rem 2.85rem 0;
+
+
+}
+/** logo  */
+header nav .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+    padding-left: 1rem;
+}
+header nav .logo img{
+    width: 5.23rem;
+    height: 4.481rem;
+}
+header nav .logo p {
+    font-size: 3.52rem;
+    margin: 2.359rem 0;
+    font-weight: bold;
+    color: var(--header-color);
+    letter-spacing: 1.5;
+}
+header nav .logo p > span {
+    color: var(--primary-color);
+}
+/** menu  */
+header nav .menu ul{
+    display: flex;
+    gap: 3.75rem;
+    margin: 1.6rem 0;
+    padding-left: 4rem ;
+    justify-content: center;
+    align-items: center;
+}
+header nav .menu ul li {
+    list-style: none;
+
+}
+header nav .menu ul li a{
+    color: var(--nav-menu-color);
+    font-size: 1.76rem ;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 2.5;
+}
+header nav .menu ul li:nth-of-type(1) a{
+    color: var(--primary-color);
+
+}
+header nav .menu .menu_icon{
+    display: none;
+}
+header nav .menu .menu_icon .box{
+    width: 2rem;
+    height: .2rem;
+    background-color: black;
+    margin-bottom: .4rem;
+}
+/* ********************* */
+
+/* * banner  */
+.banner_container{
+    height: 44.6rem;
+    margin-top: 4rem ;
+    background-image: linear-gradient(180deg, rgb(19 19 24 / 80%) 0% , rgb(19 19 24 / 0%) 100%) , url(./Images/Group\ 13\ \(1\)\ \(1\).png);
+    background-size: cover;
+    background-position: center ;
+    border-radius: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.banner_container h1{
+    color: var(--white);
+    font-size: 6.4rem;
+    margin: 4.288rem 0;
+}
+.banner_container p{
+    color: var(--white);
+    font-size: 1.6rem ;
+    margin: -10rem 0 1.6rem;
+    padding: 1rem 20.65rem ;text-align: center;
+    line-height: 2;
+}
+.banner_container form{
+    display: flex;
+    gap: 5rem;
+    background-color: #ffffff71;
+    padding: 1rem;
+    border-radius: .5rem;
+    margin-top: -5rem;
+}
+.banner_container form input,select,button{
+    width: 13rem;
+    border: 0;
+    padding: 1rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    &:focus{
+
+        outline-color: var(--primary-color);
+    }
+}
+.banner_container form select{
+    color: var(--nav-menu-color);
+}
+.banner_container form button{
+    background-color: var(--primary-color);
+    color: var(--white);
+
+}
+
+/** End banner section */
+/* * End Header Section  */
+
+.popularTour{
+    margin-top: 10rem ;
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    width: 100%;
+}
+
+.popularTour .tour_description{
+    line-height: 1.9;
+    flex-basis: 50%;
+}
+.popularTour .tour_description h2{
+    color: var(--header-color);
+    font-size: 3.84rem ;
+    margin: 0 0 2.573rem;
+
+}
+.popularTour .tour_description p{
+    color: var(--tour-paragraph-color);
+    font-size: 1.44rem ;
+    margin: 2rem 0 1.44rem ;
+    font-weight: 800;
+}
+.popularTour .tour_description ul{
+    margin: 2rem 0 1.44rem ;
+    padding-left: 4rem;
+
+}
+.popularTour .tour_description ul li{
+    color: var(--tour-paragraph-color);
+    font-size: 1.44rem ;
+    margin: 2rem 0 0 -1.5rem ;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.popularTour .tour_pic {
+    flex-basis: 50%;
+}
+.popularTour .tour_pic img{
+    width: 100%;
+    height: 100%;
+
+}
+/* * popularTour End  */
+
+.choose_destination{
+    margin-top: 10rem;
+    text-align: center;
+
+}
+.choose_destination h2{
+    color: var(--header-color);
+    font-size: 4.16rem ;
+    margin: 2.788rem ;
+}
+.choose_destination p{
+    color: var(--tour-paragraph-color);
+    font-size: 1.6rem ;
+    padding: 0 14rem;
+    line-height: 2;
+    margin: 1.6rem 0;
+}
+
+    /** image_box  */
+.image_box{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 2rem;
+}
+.image_box .item{
+    height: 30rem;
+    position: relative;
+
+}
+.image_box .item img{
+    width: 100% ;
+    height: 100%;
+}
+.image_box .text{
+    width: 100%;
+    height: 100%;
+    background-color: #00000034;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5rem;
+
+}
+.image_box .text p{
+    margin: 2.4rem 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--white);
+    font-size: 2.4rem;
+    font-weight: 900;
+    letter-spacing: 5;
+}
+.item_1{
+    grid-column: 1/7;
+}
+.item_2{
+    grid-column: 7/13;
+}
+.item_3{
+    grid-column: 1/5;
+}
+.item_4{
+    grid-column: 5/10;
+}
+.item_5{
+    grid-column: 10/13;
+}
+.item_6{
+    grid-column: 1/6;
+}
+.item_7{
+    grid-column: 6/13;
+}
+    /** image_box  */
+
+    /* * Why_choose  */
+.why_choose{
+    margin-top: 10rem ;
+}
+.heading{
+    text-align: center;
+    color: var(--header-color);
+    font-size: 4.16rem;
+    margin: 2.788rem 0;
+}
+.content{
+    text-align: center;
+    color: var(--why_choose_para-color);
+    font-size: 1.6rem ;
+    margin: 1.6rem ;
+    padding: 0 21rem ;
+    line-height: 2;
+}
+    /* * cart-container  */
+.card_container{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 4rem;
+}
+.cart_item{
+    text-align: left;
+    padding: 1.5rem;
+    flex-basis: 45%;
+    border-radius: 1.6rem;
+
+}
+.cart_item h3{
+    color: var(--header-color);
+    font-size: 2.4rem;
+    margin: 2rem 0;
+}
+.cart_item p{
+    font-size: 1.6rem;
+    color: var(--why_choose_para-color);
+    line-height: 1.5;
+    text-align: left ;
+    padding: 0;
+    margin: 1.6rem 0 ;
+}
+.cart_item_1{
+    background-color: rgb(251 181 99 / 5%);
+    border: 1px solid rgb(251 181 99 / 20%);
+    /* flex-basis: 50%; */
+    /* justify-self: flex-start; */
+}
+.cart_item_2{
+    background-color: rgb(41 206 246 / 5%);
+    border: 1px solid rgb(41 206 246 / 20%);
+    /* flex-basis: 50%; */
+
+}
+.cart_item_3{
+    background-color: rgb(233 68 68 / 5%);
+    border: 1px solid rgb(233 68 68 / 20%);
+    /* flex-basis: 50%; */
+}
+    /* * cart-container  */
+    /* * Why_choose  */
+
+    /* * deal_discount  */
+.deal_discount{
+    margin-top: 10rem;
+}
+.deal_discount .deal_item{
+    width: 100%;
+    height: 60rem ;
+    margin-top: 2.4rem ;
+    padding: 5rem ;
+    /* background: blue; */
+    border-radius: 1.6rem;
+    display: flex;
+    align-items: center;
+}
+.deal_discount .deal_item img{
+    width: 100%;
+}
+.deal_item_1 , .deal_item_3{
+    background-image: url("./Images/Group\ 39.png");
+    background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat;
+    justify-content: flex-end;
+
+}
+.deal_item_2{
+    background-image: url("./Images/Group\ 40.png");
+    background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat;
+    justify-content: flex-start;
+
+}
+.deal_discount .deal_item .deal_card{
+    width: 60%;
+    background-color: rgb(255 255 255 / 80%);
+    border: 2px solid #fff;
+    border-radius: 1.6rem;
+    padding: 5rem;
+
+}
+.deal_discount .deal_item .deal_card img{
+    width: 2.4rem;
+
+}
+    /* ul li  */
+.deal_discount .deal_item .deal_card ul li:nth-of-type(5) img{
+    width: 1.9rem;
+}
+.deal_discount .deal_item .deal_card ul{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+}
+.deal_discount .deal_item .deal_card li{
+    display: flex;
+    align-items: center;
+
+}
+.deal_discount .deal_item .deal_card li:nth-of-type(2) , li:nth-of-type(4) , li:nth-of-type(6){
+    font-size: 1.6rem;
+    margin: 1.6rem 0;
+    color: var(--why_choose_para-color);
+}
+        /* ul li  */
+.deal_discount .deal_item .deal_card h2{
+    color: var(--header-color);
+    font-size: 2.4rem ;
+    margin: 2rem 0;
+}
+.deal_discount .deal_item .deal_card p{
+    color: var(--why_choose_para-color);
+    font-size: 1.6rem;
+    margin: 1.6rem 0;
+}
+.deal_discount .deal_item .deal_card .prise{
+    color: var(--primary-color);
+    font-size: 2.8rem ;
+    margin: 2.767rem 0;
+    font-weight: bold;
+}
+.deal_descount_btn_div{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem ;
+}
+.deal_descount_btn{
+    width: 19.7rem;
+    text-align: center;
+}
+    /* * deal_discount  */
+
+    /* video_section  */
+.video_section{
+    display: flex;
+    margin-top: 10rem;
+    gap: 3rem ;
+}
+.video_section .video_info{
+    flex-basis: 50%;
+}
+.video_section .video_info h2{
+    color: var(--header-color);
+    font-size: 4rem;
+    margin: 0 0 2.68rem;
+    padding: 0 5rem 0 0;
+}
+.video_section .video_info p{
+    color: var(--why_choose_para-color);
+    font-size: 1.6rem ;
+    margin: 0 0 1.6rem ;
+    line-height: 1.5;
+
+}
+.video_section .video_info ul{
+    margin: 1.6rem 0;
+    padding: 0 0 0 4rem ;
+}
+.video_section .video_info li{
+    font-size: 1.6rem ;
+    margin: 0 0 .5rem -1rem ;
+    color: var(--header-color);
+    line-height: 1.5;
+}
+.video_btn{
+    width: 13.7rem;
+}
+.video_section .video_container{
+    flex-basis: 50%;
+    height: 100%;
+    border-radius: 1.6rem ;
+}
+.video_section .video_container iframe{
+    width: 100%;
+    border-radius: 1.6rem;
+
+}
+    /* video_section  */
+
+    /* * subscribe Container  */
+.subscribe_container{
+    margin: 10rem 0;
+    display: flex;
+    gap: 1.5rem ;
+    height: 42.2rem;
+}
+.subscribe_container .from_container{
+    flex-basis: 40%;
+    border: 1px solid var(--primary-color);
+    border-radius: 1.6rem ;
+
+
+}
+.subscribe_container .from_container h2{
+    color: var(--header-color);
+    font-size: 2.88rem;
+    margin: 1.93rem 0;
+    padding: 3rem 0 0 3rem ;
+
+}
+.subscribe_container .from_container p{
+    color: var(--why_choose_para-color);
+    font-size: 1.44rem ;
+    padding: 0 0 0 3rem;
+    margin: 1.44rem 0;
+}
+.subscribe_container .from_container .subscribe_hr{
+    width: 90%;
+    margin: 4rem auto .8rem;
+    color: rgb(19 19 24 / 10%);
+}
+.subscribe_container .from_container input {
+    background-color: var(--subscribe-input-bg);
+    border: 0;
+    display: block;
+    margin: 2rem 0 0 3rem ;
+    padding: 1.5rem 0rem 1.5rem .8rem;
+    border-radius: 1rem;
+    width: 90%;
+
+}
+.subscribe_container .from_container .subscribe_btn{
+    color: var(--white);
+    font-size: 2rem;
+    background-color: var(--primary-color);
+    margin: 2rem 3rem 0 ;
+    display: block;
+    /* padding: 1.5rem 17.5rem ; */
+    font-weight: 800;
+    width: 90%;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 1.5rem 0;
+    margin-bottom: 4rem;
+}
+.subscribe_container .subscribe_pic{
+    flex-basis: 60%;
+    background-image: url("./Images/Rectangle\ 8\ \(1\).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  center center;
+    border-radius: 1.5rem;
+}
+.subscribe_container .subscribe_pic .pic_title_container{
+    background-color: #00000051;
+    width: 100% ;
+    height: 100%;
+    border-radius: 1.6rem;
+    position: relative;
+}
+.subscribe_container .subscribe_pic .pic_title{
+    width: 32.4rem;
+    height: 12rem ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-radius: 1.6rem;
+    font-weight: 800;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    right: .7rem;
+    bottom: 4.5rem;
+    transform: rotate(-19deg);
+}
+.subscribe_container .subscribe_pic .pic_title p{
+    font-size: 1.872rem ;
+
+}
+.subscribe_container .subscribe_pic .pic_title h3{
+    font-size: 2.4rem ;
+
+}
+    /* * subscribe Container  */
+/** main section end  */
+
+footer{
+    background-color: var(--footer-and-subscribe-input-bg);
+    padding: 7rem 24.8rem ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer .footer_logo{
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+    justify-content: center;
+
+}
+footer .footer_logo img {
+    width: 4rem;
+}
+footer .footer_logo p {
+    color: var(--header-color);
+    font-size: 3.52rem ;
+    margin: 2.349rem 0;
+    font-weight: 800;
+
+}
+footer .footer_logo span{
+    color: var(--primary-color);
+}
+footer .footer_content{
+    color: var(--why_choose_para-color);
+    font-size: 1.6rem;
+    margin: .2rem 0 1.5rem;
+    padding: 0 2rem;
+    text-align: center;
+    line-height: 1.5;
+}
+footer .social_icon{
+    display: flex;
+    gap: 3.2rem;
+    margin: 3rem 0;
+    align-items: center;
+    justify-content: center;
+}
+footer .social_icon img:nth-of-type(1){
+    width: 1.990rem;
+    height: 1.6rem;
+}
+footer .social_icon img:nth-of-type(2){
+    width: 1.125rem;
+    height: 2.157rem;
+}
+footer .social_icon img:nth-of-type(3){
+    width: 2.4rem ;
+    height: 2.4rem;
+}
+footer .social_icon img:nth-of-type(4){
+    width: 2.3rem ;
+    height: 2.24rem;
+}
+footer .footer_hr{
+    margin: .8rem 0;
+    /* color: red; */
+    color: rgb(19 19 24 / 10%);
+    width: 100%;
+}
+footer .footer_last_item{
+    color: var(--why_choose_para-color);
+    font-size: 1.6rem ;
+    margin: 3rem 0 ;
+
+}
+/** media-query  */
+/** mobile device */
+@media screen and (max-width: 576px) {
+    .container{
+        width: 100%;
+    }
+    header nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5rem 0rem 0;
+        padding: 2.5rem;
+
+
+    }
+    header nav .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.3rem;
+        padding-left: 0rem;
+    }
+    header nav .logo img{
+        width: 3.533rem;
+        height: 3.03rem;
+    }
+    header nav .logo p {
+        font-size: 2.08rem;
+        margin: 1.394rem 0;
+        font-weight: bold;
+        color: var(--header-color);
+        letter-spacing: 1.5;
+    }
+    header nav .logo p > span {
+        color: var(--primary-color);
+    }
+    header nav .menu  ul{
+        display: none;
+    }
+    header nav .menu .menu_icon{
+        display: block;
+        position: relative;
+        margin-right: 5rem;
+
+    }
+    header nav .menu .menu_icon .box{
+        width: 2rem;
+        height: .2rem;
+        background-color: rgb(110, 108, 108);
+        margin-bottom: .4rem;
+
+    }
+    header nav .menu .menu_icon ul{
+        display: none;
+    }
+    header nav .menu .menu_icon:hover ul{
+        display: block;
+        position: absolute;
+        left: -5rem;
+        top: 1px;
+        background-color: rgba(0, 0, 0, 0.521);
+
+
+
+    }
+    header nav .menu .menu_icon:hover ul li {
+
+        margin-bottom: 1rem;
+        padding: .5rem .8rem;
+        position: relative;
+        left: -1.5rem;
+        text-align: center;
+    }
+    header nav .menu .menu_icon:hover ul li:nth-of-type(1) a{
+        color: var(--primary-color);
+        text-align: left;
+    }
+    header nav .menu .menu_icon:hover ul li a {
+        color: white;
+
+    }
+    header nav .menu .menu_icon:hover ul li:hover{
+        background-color: #ff55005b;
+
+    }
+    /* nav end  */
+
+    .banner_container{
+        height: 50rem;
+        width: 90%;
+        margin: auto;
+        margin-top: 2rem ;
+    }
+    .banner_container h1{
+        font-size: 2.88rem;
+        margin: 1.93rem 0;
+    }
+    .banner_container p{
+        font-size: 1.28rem ;
+        margin: -4.5rem 0 1.28rem;
+        padding: 0rem 4.5rem ;
+    }
+    .banner_container form{
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 70%;
+        margin-top: -2rem;
+    }
+    .banner_container form input,select,button{
+        width: 100%;
+        padding: 1.4rem;
+    }
+    /* End banner  */
+    /* * End header section */
+
+    .popularTour{
+        margin-top: 1.5rem ;
+        gap: 2rem;
+        flex-direction: column;
+        padding: 0 1.5rem 0;
+    }
+    .popularTour .tour_description{
+        line-height: 1.5;
+    }
+    .popularTour .tour_description h2{
+        font-size: 2.24rem ;
+        margin: 0 0 1.501rem;
+
+    }
+    .popularTour .tour_description ul{
+        margin: 2rem 0 1.44rem ;
+        padding-left: 4rem;
+
+    }
+    /* * popularTour End  */
+    .choose_destination{
+        margin-top: 10rem;
+        padding:0 1.5rem ;
+
+    }
+    .choose_destination h2{
+        font-size: 2.9rem ;
+        margin: 2rem ;
+    }
+    .choose_destination p{
+        font-size: 1.6rem ;
+        padding: 0;
+
+    }
+    /* * Image-box */
+    .image_box{
+        grid-template-columns: repeat(1,1fr);
+        gap: 2rem;
+    }
+    .image_box .item{
+        height: 20rem;
+        position: relative;
+
+    }
+    .item{
+        grid-column: 1/-1;
+    }
+
+    /* * Image-box */
+    /* * Why_choose  */
+.why_choose{
+    margin-top: 10rem ;
+    padding: 0 1.5rem ;
+}
+.heading{
+    font-size: 1.95rem;
+    margin: 1.2864rem 0;
+}
+.content{
+    font-size: 1.4rem ;
+    margin: 1.4rem 0 -2.5rem;
+    padding: 0 2rem ;
+}
+    /* * image_container */
+    .cart_item{
+        flex-basis: 100%;
+
+    }
+    /* * image_container */
+    /* * Why_choose  */
+
+    /* Deal-discount  */
+    .deal_discount .deal_item{
+        width: 95%;
+        margin: auto;
+        margin-top: 2.4rem;
+        padding: 0 ;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    /** cart-section  */
+    .deal_discount .deal_item .deal_card{
+        width: 90%;
+        padding: 2rem;
+        margin-bottom: 2rem;
+
+    }
+    .deal_discount .deal_item .deal_card img{
+        width: 2rem;
+
+    }
+        /* ul li  */
+    .deal_discount .deal_item .deal_card ul li:nth-of-type(5) img{
+        width: 1.6rem;
+    }
+    .deal_discount .deal_item .deal_card ul{
+        flex-wrap: wrap;
+    }
+            /* ul li  */
+    /** cart-section  */
+    /* Deal-discount  */
+
+    /** video_section  */
+.video_section{
+    flex-direction: column;
+    padding: 0 3.5rem;
+    margin:  auto;
+    margin-top: 5rem;
+}
+.video_section .video_info{
+    flex-basis: 50%;
+}
+.video_section .video_info h2{
+    font-size: 2.4rem;
+    margin: 0 0 1.61rem;
+    padding: 0 5rem 0 0;
+}
+.video_section .video_info p{
+    font-size: 1.28rem ;
+    margin: 0 0 1.28rem ;
+    line-height: 1.5;
+
+}
+.video_section .video_info ul{
+    margin: 1.6rem 0;
+    padding: 0 0 0 4rem ;
+}
+.video_section .video_info li{
+    font-size: 1.6rem ;
+    margin: 0 0 .5rem -1rem ;
+}
+    /** video_section  */
+    /**  subscribe container  */
+    .subscribe_container{
+        flex-direction: column;
+        height: 85rem;
+        margin: 10rem 2.9rem;
+    }
+    .subscribe_container .from_container .subscribe_hr{
+        margin: 1rem 1.55rem;
+    }
+    .subscribe_container .from_container input{
+        width: 80%;
+    }
+    .subscribe_container .from_container .subscribe_btn{
+        width: 80%;
+        margin: 2rem 0 4rem 3rem;
+    }
+    .subscribe_container .subscribe_pic .pic_title{
+        width: 26rem;
+        bottom: 3.5rem;
+    }
+
+    /**  subscribe container  */
+    /* main section end  */
+
+
+    /** footer section  */
+    footer{
+        padding: 1.6rem;
+
+    }
+    footer .footer_logo p{
+        font-size: 2.5rem;
+    }
+    footer .footer_logo img{
+        width: 3.5rem;
+    }
+    footer .social_icon {
+        margin: 2rem 0;
+    }
+    footer .footer_last_item{
+        margin: 2rem 0;
+    }
+    /** footer section  */
+
+}
+@media screen and (min-width: 577px) and (max-width:768px){
+    .container{
+        width: 85%;
+    }
+    header nav{
+        margin: 5rem 0rem 0;
+        padding: 2.5rem;
+    }
+    header nav .logo{
+        gap: 1.3rem;
+    }
+    header nav .logo img{
+        width: 3.533rem;
+        height: 3.03rem;
+    }
+    header nav .logo p {
+        font-size: 2.3rem;
+        margin: 1.5rem 0;
+        letter-spacing: 1.5;
+    }
+    header nav .logo p > span {
+        color: var(--primary-color);
+    }
+    header nav .menu  ul{
+        display: none;
+    }
+    header nav .menu .menu_icon{
+        display: block;
+        position: relative;
+        margin-right: 5rem;
+
+    }
+    header nav .menu .menu_icon .box{
+        width: 2rem;
+        height: .2rem;
+        background-color: rgb(110, 108, 108);
+        margin-bottom: .4rem;
+
+    }
+    header nav .menu .menu_icon ul{
+        display: none;
+    }
+    header nav .menu .menu_icon:hover ul{
+        display: block;
+        position: absolute;
+        left: -5rem;
+        top: 1px;
+        background-color: rgba(0, 0, 0, 0.521);
+
+
+
+    }
+    header nav .menu .menu_icon:hover ul li {
+
+        margin-bottom: 1rem;
+        padding: .5rem .8rem;
+        position: relative;
+        left: -1.5rem;
+        text-align: center;
+    }
+    header nav .menu .menu_icon:hover ul li:nth-of-type(1) a{
+        color: var(--primary-color);
+        text-align: left;
+    }
+    header nav .menu .menu_icon:hover ul li a {
+        color: white;
+
+    }
+    header nav .menu .menu_icon:hover ul li:hover{
+        background-color: #ff55005b;
+
+    }
+    /* nav end  */
+    .banner_container{
+        height: 50rem;
+        width: 100%;
+        margin: auto;
+        margin-top: 3rem ;
+    }
+    .banner_container h1{
+        font-size: 3.5rem;
+        margin: 2.5rem 0;
+    }
+    .banner_container p{
+        font-size: 1.3rem ;
+        margin: -4rem 0 1.28rem;
+        padding: 0rem 8.5rem ;
+    }
+    .banner_container form{
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 55%;
+        margin-top: -2rem;
+    }
+    .banner_container form input,select,button{
+        width: 100%;
+        padding: 1.4rem;
+    }
+    /* End banner  */
+    /* * End header section */
+
+    .popularTour{
+        margin-top: 4rem ;
+        gap: 2rem;
+        flex-direction: column;
+        padding: 0 0;
+    }
+    .popularTour .tour_description{
+        line-height: 1.7;
+    }
+    .popularTour .tour_description h2{
+        font-size: 2.67rem ;
+        margin: 0 0 1.501rem;
+
+    }
+    .popularTour .tour_description ul{
+        margin: 2rem 0 1.44rem ;
+        padding-left: 4rem;
+
+    }
+    /* * popularTour End  */
+    .choose_destination{
+        margin-top: 10rem;
+        padding: 0 ;
+
+
+    }
+    .choose_destination h2{
+        font-size: 3.3rem ;
+        margin: 2.4rem ;
+    }
+    .choose_destination p{
+        font-size: 1.6rem ;
+        padding: 0 2rem;
+
+    }
+    /* * Image-box */
+    .image_box{
+        grid-template-columns: repeat(1,1fr);
+        gap: 2rem;
+    }
+    .image_box .item{
+        height: 27rem;
+        position: relative;
+
+    }
+    .item{
+        grid-column: 1/-1;
+    }
+
+    /* * Image-box */
+    /* * Why_choose  */
+.why_choose{
+    margin-top: 10rem ;
+    padding: 0  ;
+}
+.heading{
+    font-size: 2.8rem;
+    margin: 1.4864rem 0;
+}
+.content{
+    font-size: 1.5rem ;
+    margin: 1.5rem 0 -2rem;
+    padding: 0 2rem ;
+}
+    /* * Image container  */
+    .cart_item{
+        flex-basis: 90%;
+
+    }
+    /* * Image container  */
+
+    /* * Why_choose  */
+    /* Deal-discount  */
+    .deal_discount .deal_item{
+        margin-top: 2.4rem;
+        padding: 0 ;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /** cart-section  */
+    .deal_discount .deal_item .deal_card{
+        width: 80%;
+        padding: 2rem;
+
+    }
+    /** cart-section  */
+    /* Deal-discount  */
+
+    /** video_section  */
+.video_section{
+    flex-direction: column;
+    padding: 0 3.5rem;
+    margin:  auto;
+    margin-top: 5rem;
+}
+.video_section .video_info{
+    flex-basis: 50%;
+}
+.video_section .video_info h2{
+    font-size: 3rem;
+    margin: 0 0 2rem;
+    padding: 0 5rem 0 0;
+}
+.video_section .video_info p{
+    font-size: 1.35rem ;
+    margin: 0 0 1.35rem ;
+}
+.video_section .video_info ul{
+    margin: 1.6rem 0;
+    padding: 0 0 0 4rem ;
+}
+.video_section .video_info li{
+    font-size: 1.6rem ;
+    margin: 0 0 .5rem -1rem ;
+}
+    /** video_section  */
+    /**  subscribe container  */
+    .subscribe_container{
+        flex-direction: column;
+        height: 85rem;
+        margin: 10rem 2.9rem;
+    }
+    .subscribe_container .from_container hr{
+        margin: 1rem 1.55rem;
+    }
+    .subscribe_container .from_container input{
+        width: 80%;
+    }
+    .subscribe_container .from_container .subscribe_btn{
+        width: 80%;
+        margin: 2rem 0 4rem 3rem;
+    }
+    .subscribe_container .subscribe_pic .pic_title{
+        width: 26rem;
+        bottom: 3.5rem;
+    }
+
+    /**  subscribe container  */
+    /** footer section  */
+    footer{
+        padding: 2.6rem;
+
+    }
+    footer .footer_logo p{
+        font-size: 3rem;
+    }
+    footer .footer_logo img{
+        width: 3.7rem;
+    }
+    footer .social_icon {
+        margin: 2rem 0;
+    }
+    footer .footer_last_item{
+        margin: 2rem 0;
+    }
+    /** footer section  */
+}
+@media screen and (min-width: 769px) and (max-width:992px){
+    .container{
+        width: 85%;
+    }
+    header nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 2rem 0rem 0;
+        padding: 2rem;
+
+
+    }
+    header nav .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.3rem;
+        padding-left: 0rem;
+    }
+    header nav .logo img{
+        width: 3.533rem;
+        height: 3.03rem;
+    }
+    header nav .logo p {
+        font-size: 2.7rem;
+        margin: 2rem 0;
+
+    }
+
+    header nav .menu  ul{
+        display: block;
+    }
+    header nav .menu ul{
+        display: flex;
+        gap: 2rem;
+        margin: 2rem 0;
+        padding-left: 4rem ;
+    }
+
+    /* end nav  */
+
+    .banner_container{
+        margin-top: 3rem ;
+    }
+    .banner_container h1{
+        font-size: 5rem;
+        margin: 3.6rem 0;
+    }
+    .banner_container p{
+        font-size: 1.4rem ;
+        margin: -9rem 0 1.6rem;
+        padding: 1rem 16.65rem ;text-align: center;
+        line-height: 2;
+    }
+    .banner_container form{
+        gap: 3rem;
+        padding: 1rem;
+        margin-top: -5rem;
+    }
+    /* End banner  */
+    /* * End header section */
+    .popularTour{
+        margin-top: 7rem ;
+        gap: 1rem;
+        padding: 0 0;
+    }
+    .popularTour .tour_description{
+        line-height: 1.5;
+    }
+    .popularTour .tour_description h2{
+        font-size: 3rem ;
+        margin: 0 0 1.6rem;
+
+    }
+    .popularTour .tour_description p{
+        font-size: 1.4rem;
+        margin: 1rem 1rem;
+    }
+    .popularTour .tour_description ul{
+        margin: 1rem 0 1rem ;
+        padding-left: 4rem;
+
+    }
+    .popularTour .tour_description ul li{
+        margin: 1rem 0 1rem ;
+        font-size: 1.4rem;
+
+    }
+    .tour_pic img{
+        height: 100%;
+        width: 100%;
+    }
+    .tour_btn{
+        margin: 0;
+        padding: 1rem 3rem;
+    }
+    /* * popularTour End  */
+    .choose_destination{
+        margin-top: 10rem;
+        padding: 0 ;
+
+
+    }
+    .choose_destination h2{
+        font-size: 3.7rem ;
+        margin: 2.6rem ;
+    }
+    .choose_destination p{
+        font-size: 1.6rem ;
+        padding: 0 6rem;
+
+    }
+    /* * Image-box */
+    .image_box{
+
+        gap: 2rem;
+    }
+    .image_box .item{
+        height: 20rem;
+        position: relative;
+
+    }
+
+
+    /* * Image-box */
+    /* * Why_choose  */
+    .why_choose{
+        margin-top: 10rem ;
+        padding: 0  ;
+    }
+    .heading{
+        font-size: 3.5rem;
+        margin: 1.6864rem 0;
+    }
+    .content{
+        font-size: 1.6rem ;
+        margin: 1.6rem 0 -2rem;
+        padding: 0 2rem ;
+    }
+
+    /* * Why_choose  */
+    /* Deal-discount  */
+    .deal_discount .deal_item{
+        margin-top: 2.4rem;
+        padding: 2.5rem ;
+        /* justify-content: center; */
+        align-items: center;
+    }
+
+    /** cart-section  */
+    .deal_discount .deal_item .deal_card{
+        width: 70%;
+        padding: 2rem;
+
+    }
+    /** cart-section  */
+    /* Deal-discount  */
+
+    /** video_section  */
+.video_section{
+    margin-top: 5rem;
+}
+.video_section .video_info{
+    flex-basis: 50%;
+}
+.video_section .video_info h2{
+    font-size: 2.8rem;
+    margin: 0 0 1.4rem;
+    padding: 0 1rem 0 0;
+}
+.video_section .video_info p{
+    font-size: 1.3rem ;
+    margin: 0 0 1.3rem ;
+}
+.video_section .video_info ul{
+    margin: 1.3rem 0;
+    padding: 0 0 0 4rem ;
+}
+.video_section .video_info li{
+    font-size: 1.6rem ;
+    margin: 0 0 .5rem -1rem ;
+}
+    /** video_section  */
+    /**  subscribe container  */
+    /* .subscribe_container{
+
+    } */
+    .subscribe_container .from_container{
+        flex-basis: 50%;
+    }
+    .subscribe_container .from_container input {
+        width: 80%;
+    }
+    .subscribe_container .from_container .subscribe_btn {
+        width: 80%;
+    }
+    .subscribe_container .subscribe_pic{
+        flex-basis: 50%;
+    }
+
+    /**  subscribe container  */
+
+    /* * footer section  */
+    footer{
+        padding:7rem 13.6rem;
+
+    }
+    /* * footer section  */
+
+}
+@media screen and (min-width: 993px) and (max-width:1060px){
+    .container{
+        width: 85%;
+    }
+
+    .popularTour{
+        margin-top: 8.5rem ;
+        gap: 1rem;
+        padding: 0 0;
+    }
+    .popularTour .tour_description{
+        line-height: 1.6;
+    }
+    .popularTour .tour_description h2{
+        font-size: 3.2rem ;
+        margin: 0 0 2rem;
+
+    }
+    .popularTour .tour_description p{
+        font-size: 1.44rem;
+        margin: 1.4rem 1.4rem;
+    }
+    .popularTour .tour_description ul{
+        margin: 1.4rem 0 1.4rem ;
+        padding-left: 4rem;
+
+    }
+    .popularTour .tour_description ul li{
+        margin: 1rem 0 1rem ;
+        font-size: 1.4rem;
+
+    }
+    .tour_pic img{
+        height: 100%;
+        width: 100%;
+    }
+    .tour_btn{
+        margin: 0;
+        padding: 1rem 3rem;
+    }
+
+    /* * Why_choose  */
+    .why_choose{
+        margin-top: 10rem ;
+        padding: 0  ;
+    }
+    .heading{
+        font-size: 3.8rem;
+        margin: 1.864rem 0;
+    }
+    .content{
+        font-size: 1.6rem ;
+        margin: 1.6rem 0 -2rem;
+        padding: 0 2rem ;
+    }
+    /* * Why_choose  */
+
+
+
+}
